@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Budget Allocation App</title>
+  </head>
+
+  <body>
+
+    <h1>Dan's Budget</h1>
+    <table id="HeadingTable">
+      <tr>
+        <td id="BudgetAmount" style="width:25%">
+          Budget: $
+          <input id="Budget" onchange="BudgetValidation()" type="number" placeholder="Amount" align="right" style = "width:64%"">
+        </td>
+        <td id="Remaining" style="width:25%">Remaining$: 1250</td>
+        <td id="Spent" style="width:25%">Spent So far$: 18750</td>
+        <td id="Currency" class="dropdown" style = "width:25%">
+          Currency
+          <select style = "width:69%">
+            <option value="USD">$ Dollar</option>
+            <option value="EUR">€ Euro</option>
+            <option value="GBP">£ Pound</option>
+            <option value="INR">₹ Rupee</option>
+          </select>
+        </td>
+      </tr>
+
+    </table>
+
+    <h2>Allocation</h2>
+    <table id="AllocationTable">
+      <th style="width:35%">Expense</th>
+      <th style="width:35%">Budget Allocation</th>
+      <th style="width:15%">increase by 10</th>
+      <th style="width:15%">decrease by 10</th>
+      <tr>
+        <td>Transport</td>
+        <td id="TransportAllocation">
+          $ <input type="number" placeholder=6200 style ="width:93%">
+        </td>
+        <td>
+          <button type="button" class="add10"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        </td>
+        <td>
+          <button type="button" class="decrease"><i class="fa fa-minus-square" aria-hidden="true"></i></button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Internet</td>
+        <td id="InternetAllocation">
+          $ <input type="number" placeholder=5400 style ="width:93%">
+        </td>
+        <td>
+          <button type="button" class="add10"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        </td>
+        <td>
+          <button type="button" class="decrease"><i class="fa fa-minus-square" aria-hidden="true"></i></button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Power</td>
+        <td id="PowerAllocation">
+          $ <input type="number" placeholder=2550 style = "width:93%">
+        </td>
+        <td>
+          <button type="button" class="add10"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        </td>
+        <td>
+          <button type="button" class="decrease"><i class="fa fa-minus-square" aria-hidden="true"></i></button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Water</td>
+        <td id="WaterAllocation">
+          $ <input type="number" placeholder=3900 style = "width:93%">
+        </td>
+        <td>
+          <button type="button" class="add10"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        </td>
+        <td>
+          <button type="button" class="decrease"><i class="fa fa-minus-square" aria-hidden="true"></i></button>
+        </td>
+      </tr>
+      <tr>
+        <td>Other</td>
+        <td id="OtherAllocation">
+          $ <input type="number" placeholder=700 style = "width:93%">
+        </td>
+        <td>
+          <button type="button" class="add10"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        </td>
+        <td style="width: 200px">
+          <button type="button" class="decrease"><i class="fa fa-minus-square" aria-hidden="true"></i></button>
+        </td>
+      </tr>
+    </table>
+    <h2>Change Allocation</h2>
+    <table>
+      <tr>
+        <td style="width:30%"">
+          Expense
+          <select>
+            <option value=" Transport">Transport</option>
+          <option value="Internet">Internet</option>
+          <option value="Power">Power</option>
+          <option value="Water">Transport</option>
+          <option value="Other">Other</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option value="Add">Add</option>
+            <option value="Subtract">Substract</option>
+          </select>
+        </td>
+        <td>
+          $
+          <input type="number" style="width:85%">
+        </td>
+        <td><button type="button" class = "save">Save</button></td>
+      </tr>
+    </table>
+  </body>
+
+</html>
