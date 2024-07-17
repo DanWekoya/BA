@@ -1,0 +1,48 @@
+table #HeadingTable,
+tr {
+  fill: light blue;
+}
+td {
+  border: rgb(204, 204, 0);
+  background: rgb(204, 204, 0);
+}
+
+input {
+  vertical-align: center;
+  height: 13px;
+  text-align: right;
+}
+
+#AllocationTable,
+tr{ border: rgb(204, 204, 0); }
+th{
+    border: rgb(204, 204, 0);
+    background: rgb(204, 204, 0); 
+}
+
+select > option {
+    background-color: rgb(204, 204, 0);
+}
+
+.add10 {
+  font-size: 20px;
+  background-color: rgb(194, 249, 112);
+  color: green;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.decrease {
+  font-size: 20px;
+  background-color: rgb(255,127,127);
+  color: rgb(139,0,0);
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.save{
+  background-color: green;
+  color: white;
+}
